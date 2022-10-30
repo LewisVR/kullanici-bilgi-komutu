@@ -1,4 +1,3 @@
-Your new repository will be created as discord-kullan-c-bilgim-komutu.
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const moment = require("moment");
@@ -133,7 +132,7 @@ exports.run = async (client, message, args) => {
               .filter(r => r.name !== "@everyone")
               .map(r => r)
               .join(" **|** ")
-          : "Bu kullanıcının bu sunucuda hiç rolü bulunmuyor."
+          : "Bu kullanıcının bu sunucuda hiç rolü bulunmamaktadır.."
       }`
     );
   message.channel.send({ embed });
